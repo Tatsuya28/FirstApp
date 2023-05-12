@@ -12,9 +12,9 @@ export class ProductListComponent {
     constructor () { }
 
     ngOnInit(): void {
-        this.ProductArray.push(new Product(1, "Rubik's Cube", "This is a Rubik's Cube", "10$", "UTBM", "./assets/img/rubikscube.jpeg"))
-        this.ProductArray.push(new Product(2, "PC Fixe", "This is a PC", "1000$", "WE4A", "./assets/img/pcfixe.jpeg"))
-        this.ProductArray.push(new Product(3, "PC Portable", "This is a computer", "500$", "WE4B", "./assets/img/pcportable.jpeg"))
-        this.ProductArray.push(new Product(4, "Book", "This is a book", "10$", "UTBM", "./assets/img/livre.jpeg"))
+        this.ProductArray.push(new Product(1, "Rubik's Cube", "This is a Rubik's Cube", 10, "UTBM", "./assets/img/rubikscube.jpeg"))
+        this.ProductArray.push(new Product(2, "PC Fixe", "This is a PC", 1000, "WE4A", "./assets/img/pcfixe.jpeg"))
+        this.ProductArray.push(new Product(3, "PC Portable", "This is a computer", 500, "WE4B", "./assets/img/pcportable.jpeg"))
+        this.ProductArray.push(new Product(4, "Book", "This is a book", 0, "UTBM", "./assets/img/livre.jpeg"))
     }
 }

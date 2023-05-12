@@ -9,6 +9,7 @@ import { Product } from 'src/models/Product'
 export class ProductComponent implements OnInit {
 
     @Input() product!: Product
+    @Input() prd_index!: number
 
     constructor() {
     }
