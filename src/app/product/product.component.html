@@ -2,13 +2,14 @@
     <div class="card-header">
         Product: {{prd_index}}
     </div>
-    <img src={{product.img}} class="card-img-top" alt="...">
+    <img src={{product.img}} class="card-img-top" height="300px" alt="...">
     <div class="card-body">
         <h5 class="card-title">Title: {{product.title}}</h5>
         <p class="card-text">Description: {{product.description}}</p>
     </div>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item" *ngIf="product.price > 0 ; else freeBlock" [ngClass]="{'fonctColor size20 backgroundColor' : product.price > 20}">Price: {{product.price}} $</li>
+        <!-- <li class="list-group-item" *ngIf="product.price > 0 ; else freeBlock" [ngClass]="{'fonctColor size20 backgroundColor' : product.price > 20}">Price: {{product.price}} $</li> -->
+        <li class="list-group-item" *ngIf="product.price > 0 ; else freeBlock" [ngStyle]="{'background-color' : product.price > 20 ? 'red' : 'green'}">Price: {{product.price}} $</li>
         <ng-template #freeBlock>
             <li class="list-group-item">Price: Free</li>
         </ng-template>
